@@ -1,0 +1,12 @@
+video {
+    width: 320px;
+    height: 240px;
+    border: 1px solid black;
+}
+body {
+    text-align: center;
+}
+#mute {
+    width: auto;
+    background: lightgreen;
+}

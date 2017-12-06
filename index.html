@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebRtc Audio & Video</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <!-- 引入相应的CSS -->
+    <link type="text/css" rel="stylesheet" href="css/basestyle.css">
+</head>
+<body>
+
+<h1>WebRtc使用</h1>
+
+<div id="selectRoom">
+    <button id="goBoth">Video and Audio</button>
+    <button id="goVideoOnly">Video only</button>
+    <button id="goAudioOnly">Audio only</button>
+</div>
+
+<div id="conferenceRoom">
+    <video id="localVideo" autoplay></video>
+    <video id="remoteVideo" autoplay></video>
+    <br/>
+    <span id="mute" style="display:none">Toggle Audio</span>
+    <h2>Remote audio events</h2>
+    <div id="audioEvents"></div>
+</div>
+
+<!-- 引入相应的JS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/webrtc.js"></script>
+<script src="js/client.js"></script>
+</body>
+</html>
